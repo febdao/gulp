@@ -1,8 +1,11 @@
 {
   "title": "Gulp and Twig",
-  "benefits": [
-      "Fast",
-      "Flexible",
-      "Secure"
-  ]
+  "banner": {
+    "title": "[CSS-VN] Cộng đồng Front-end Việt Nam",
+    "text": "Trao đổi và chia sẻ kinh nghiệm về html/css/js",
+    "button": {
+      "text": "Learn more",
+      "link": "http://css-vn.com"
+    }
+  }
 }

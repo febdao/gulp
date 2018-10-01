@@ -5,20 +5,20 @@
   <img
     class="banner__image"
     src="http://watch-learn.com/themes/olympos/assets/images/bg-abstract.jpg"
-    alt="CSS-Vn: Cộng đồng Front-end Việt Nam!"/>
+    alt="{{ banner.title }}"/>
   <div class="banner__content">
     <h1
       class="banner__title">
-      CSS-Vn: Cộng đồng Front-end Việt Nam!
+      {{ banner.title }}
     </h1>
     <p
       class="banner__text">
-      Trao đổi và chia sẻ kinh nghiệm về html/css/js
+      {{ banner.text }}
     </p>
     <a
       class="banner__button"
-      href="http://css-vn.com">
-      Learn more
+      href="{{ banner.button.link }}">
+      {{ banner.button.text }}
     </a>
   </div>
 </div>

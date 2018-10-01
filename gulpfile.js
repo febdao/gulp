@@ -37,6 +37,7 @@ gulp.task('watch', function () {
   });
   gulp.watch('./scss/**/*.scss', ['sass']);
   gulp.watch('**/*.twig', ['twig']);
+  gulp.watch('**/*.json', ['twig']);
   gulp.watch('./app/**/*.html').on('change', browserSync.reload);
 });
 
