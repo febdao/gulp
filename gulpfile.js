@@ -39,6 +39,7 @@ gulp.task('watch', function () {
   gulp.watch('**/*.twig', ['twig']);
   gulp.watch('**/*.json', ['twig']);
   gulp.watch('./app/**/*.html').on('change', browserSync.reload);
+  gulp.watch('./app/**/*.js').on('change', browserSync.reload);
 });
 
 var getJsonData = function(file) {
