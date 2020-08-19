@@ -13,20 +13,10 @@ gulp.task('default', function(){
   console.log('Hello world!');
 });
 
-gulp.task('prefix', function(){
-  gulp.src('style.css')
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions']
-    }))
-    .pipe(gulp.dest('dist'))
-});
-
 gulp.task('sass', function(){
   return gulp.src('./scss/**/*.scss')
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions']
-    }))
+    .pipe(autoprefixer())
     .pipe(gulp.dest('./app/css'))
     .pipe(browserSync.stream());
 });
@@ -35,9 +25,9 @@ gulp.task('watch', function () {
   browserSync.init({
     server: "./app"
   });
-  gulp.watch('./scss/**/*.scss', ['sass']);
-  gulp.watch('**/*.twig', ['twig']);
-  gulp.watch('**/*.json', ['twig']);
+  gulp.watch('./scss/**/*.scss', gulp.series(['sass']));
+  gulp.watch('**/*.twig', gulp.series(['twig']));
+  gulp.watch('**/*.json', gulp.series(['twig']));
   gulp.watch('./app/**/*.html').on('change', browserSync.reload);
 });
 
