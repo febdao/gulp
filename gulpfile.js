@@ -9,10 +9,6 @@ var gulp = require('gulp'),
     prettify = require('gulp-html-prettify'),
     browserSync = require('browser-sync').create();
 
-gulp.task('default', function(){
-  console.log('Hello world!');
-});
-
 gulp.task('sass', function(){
   return gulp.src('./scss/**/*.scss')
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
@@ -43,3 +39,5 @@ gulp.task('twig', function(){
     .pipe(prettify({indent_char: ' ', indent_size: 2}))
     .pipe(gulp.dest('./app'));
 })
+
+gulp.task('default', gulp.series(['watch']));
