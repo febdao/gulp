@@ -1,5 +1,7 @@
 {
-  "title": "Gulp and Twig",
+  "site": {
+    "title": "Digital Skills Organisation | Digital Skills Oganisation"
+  },
   "banner": {
     "title": "[CSS-VN] Cộng đồng Front-end Việt Nam",
     "text": "Trao đổi và chia sẻ kinh nghiệm về html/css/js",
@@ -7,6 +9,5 @@
       "text": "Learn more",
       "link": "http://css-vn.com"
     }
-  },
-  "feb": "feb dao"
+  }
 }

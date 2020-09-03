@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     clean = require('gulp-clean'),
     path = require('path'),
     prettify = require('gulp-html-prettify'),
+    fs = require('fs'),
     browserSync = require('browser-sync').create();
 
 gulp.task('clean-css', function () {
@@ -31,7 +32,7 @@ gulp.task('sass', gulp.parallel('clean-css', function(){
 var getJsonData = function(file) {
   var json = './' + path.basename(file.path, '.twig') + '.json';
   delete require.cache[require.resolve(json)];
-  return require(json);
+  return JSON.parse(fs.readFileSync(json));
 };
 
 gulp.task('twig', gulp.parallel('clean-html', function(){
