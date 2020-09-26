@@ -4,10 +4,61 @@ html {
   margin: 0;
   box-sizing: border-box;
   font-size: 16px;
+  line-height: 1.75;
   font-family: $base-font;
+  color: $primary-color;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend %heading;
+}
+
+h1 {
+  font-size: 60px;
+  @include maw($lg) {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  @include maw($lg) {
+    font-size: 26px;
+  }
+}
+
+h3 {
+  font-size: 21px;
+  @include maw($lg) {
+    font-size: 18px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }

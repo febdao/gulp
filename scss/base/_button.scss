@@ -1,0 +1,10 @@
+.btn,
+%btn {
+  @extend %text--up;
+  font-size: 18px;
+  color: $primary-color;
+  background-color: $secondary-color;
+  border-radius: 7px;
+  padding: 10px 60px;
+  display: inline-block;
+}

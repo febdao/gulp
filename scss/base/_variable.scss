@@ -5,7 +5,7 @@ $purple: #6f42c1;
 $pink: #e83e8c;
 $red: #dc3545;
 $orange: #ffaa31;
-$yellow: #ffc107;
+$yellow: #faaf3f;
 $green: #28a745;
 $teal: #20c997;
 $cyan: #17a2b8;
@@ -19,18 +19,17 @@ $info: #36a3f7;
 $warning: #ffb822;
 $danger: #f4516c;
 $light: #f8f9fa;
-$dark: #343a40;
-
+$dark: #1D1447;
 $black: #111;
 $silver: #ccc;
 $pigeon-post: #aec9de;
-
+$primary-color: $dark;
+$secondary-color: $yellow;
 // Font
-$quick-sand: 'Quicksand', sans-serif;
-
-$base-font: $quick-sand;
-$heading-font: $quick-sand;
-
+$montserratd: 'Montserrat',
+sans-serif;
+$base-font: $montserratd;
+$heading-font: $montserratd;
 // Media breakpoints
 $sm: 576px;
 $md: 768px;

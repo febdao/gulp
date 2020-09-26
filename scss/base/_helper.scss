@@ -1,0 +1,35 @@
+.heading,
+%heading {
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 20px;
+}
+
+.text--up,
+%text--up {
+  text-transform: uppercase;
+}
+
+.text {
+  &--center {
+    text-align: center;
+  }
+  &--white {
+    color: $white;
+  }
+}
+
+.bg {
+  &--primary {
+    background-color: $primary-color;
+  }
+  &--secondary {
+    background-color: $secondary-color;
+  }
+}
+
+.sp {
+  &--lg {
+    padding: 100px 0;
+  }
+}

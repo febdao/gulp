@@ -1,14 +1,11 @@
-<div class="banner">
-  <img class="banner__image" src="http://watch-learn.com/themes/olympos/assets/images/bg-abstract.jpg" alt="{{ banner.title }}"/>
-  <div class="banner__content">
-    <h1 class="banner__title">
-      {{ banner.title }}
-    </h1>
-    <p class="banner__text">
-      {{ banner.text }}
-    </p>
-    <a class="banner__button" href="{{ banner.button.link }}">
-      {{ banner.button.text }}
-    </a>
+<div class="banner bg--primary text--center text--white sp--lg">
+  <div class="container container--sm">
+    <div class="banner__inner">
+      <h1 class="banner__title">{{ banner.title }}</h1>
+      <h2 class="banner__subtitle">{{  banner.subtitle }}</h2>
+      <p class="banner__text">{{ banner.text }}</p>
+      <p class="banner__text">{{ banner.subtext }}</p>
+      <a href="{{ banner.button.link }}" class="banner__btn btn">{{ banner.button.text }}</a>
+    </div>
   </div>
 </div>

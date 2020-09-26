@@ -1,13 +1,16 @@
 {
   "site": {
-    "title": "Digital Skills Organisation | Digital Skills Oganisation"
+    "title": "Digital Skills Organisation | Digital Skills Oganisation",
+    "logo": "/images/logo.svg"
   },
   "banner": {
-    "title": "[CSS-VN] Cộng đồng Front-end Việt Nam",
-    "text": "Trao đổi và chia sẻ kinh nghiệm về html/css/js",
+    "title": "Digital Skills Organisation",
+    "subtitle": "We are building something great...",
+    "text": "Welcome to DSO’s temporary website.",
+    "subtext": "The real thing will be ready very soon, but we couldn’t wait to let you know about our upcoming projects.",
     "button": {
-      "text": "Learn more",
-      "link": "http://css-vn.com"
+      "text": "FIND OUT MORE",
+      "link": "#"
     }
   }
 }

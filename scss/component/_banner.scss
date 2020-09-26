@@ -1,44 +1,11 @@
 .banner {
-  text-align: center;
-  position: relative;
-
-  &__title {
-    text-transform: uppercase;
-    font-size: 30px;
-    margin-top: 0;
-    font-weight: bold;
-  }
-
   &__text {
-    font-size: 20px;
-
+    @extend h3,
+  }
+  &__btn {
+    margin-top: 40px;
     @include miw($lg) {
-      font-size: 40px;
+      margin-top: 80px;
     }
-  }
-
-  &__image {
-    width: 100%;
-  }
-
-  &__button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: $indigo;
-    color: $white;
-    text-decoration: none;
-    transition: all .3s;
-
-    &:hover {
-      background-color: $orange;
-    }
-  }
-
-  &__content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
   }
 }
